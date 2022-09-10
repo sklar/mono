@@ -1,0 +1,27 @@
+{
+  "name": "@mono/root",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "pnpm --parallel run build",
+    "build:one": "pnpm --filter one run build",
+    "build:two": "pnpm --filter two run build",
+    "dev": "pnpm --parallel run dev",
+    "dev:one": "pnpm --filter one run dev",
+    "dev:two": "pnpm --filter two run dev"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  },
+  "volta": {
+    "node": "16.17.0"
+  }
+}

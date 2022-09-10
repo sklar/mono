@@ -1,0 +1,32 @@
+# Ignored files.
+# @see https://git-scm.com/docs/gitignore
+
+*.local
+dist
+
+# ##############################################################################
+# Specific patterns
+# ##############################################################################
+
+# CI
+.netlify
+
+# dependencies
+node_modules
+
+# environment variables
+.env
+.env.production
+
+# IDE
+.history
+.idea
+.vscode/*
+*.sublime-*
+
+# logs
+*-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
