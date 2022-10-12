@@ -1,0 +1,4 @@
+# Ignored files.
+# @see https://prettier.io/docs/en/ignore.html
+
+*.md
