@@ -2,7 +2,7 @@
 
 A monorepo playground w/ two apps and shared components.
 
-<table border="0" cellspacing="0">
+<table>
 <tr>
 <td>
 
