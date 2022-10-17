@@ -1,4 +1,11 @@
 # Ignored files.
 # @see https://prettier.io/docs/en/ignore.html
 
+.vscode/*
+
+**/.netlify
+**/dist
+
 *.md
+
+pnpm-lock.yaml

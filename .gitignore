@@ -8,6 +8,9 @@ dist
 # Specific patterns
 # ##############################################################################
 
+# cache
+.eslintcache
+
 # CI
 .netlify
 
@@ -21,7 +24,6 @@ node_modules
 # IDE
 .history
 .idea
-.vscode/*
 *.sublime-*
 
 # logs

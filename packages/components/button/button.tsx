@@ -1,4 +1,4 @@
-import React, { forwardRef, HTMLAttributes } from 'react'
+import { forwardRef, HTMLAttributes } from 'react'
 
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
 	/**
@@ -40,8 +40,11 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 	) => (
 		<button
 			ref={ref}
-			data-active={active || null}
-			data-busy={busy || null}
+			data-active={active ?? null}
+			data-busy={busy ?? null}
+			data-size={size}
+			data-type={type}
+			data-variant={variant}
 			disabled={busy || disabled ? true : undefined}
 			{...props}
 		>
@@ -49,3 +52,5 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 		</button>
 	),
 )
+
+Button.displayName = 'Button'

@@ -1,3 +1,3 @@
 # Components
 
-Check components!
+<!-- Check components! -->

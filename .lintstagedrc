@@ -1,0 +1,8 @@
+{
+	"**/*.{cjs,js,jsx,mjs,ts,tsx}": [
+		"eslint --cache --quiet"
+	],
+	"**/*": [
+		"prettier --cache --ignore-unknown --write"
+	]
+}

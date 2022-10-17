@@ -1,0 +1,6 @@
+# Ignored files.
+# @see https://eslint.org/docs/user-guide/configuring/ignoring-code#the-eslintignore-file
+
+**/dist
+
+pnpm-lock.yaml

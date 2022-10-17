@@ -1,6 +1,6 @@
 # Monorepo PoC
 
-A monorepo playground w/ two apps and shared components.
+A monorepo playground w/ two React apps (React) and shared components (without compilation).
 
 <table>
 <tr>
