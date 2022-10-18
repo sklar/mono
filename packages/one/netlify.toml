@@ -1,3 +1,12 @@
 [build]
 	base = "packages/one"
-	ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF . ../components/"
+	command = "npx pnpm install --store=node_modules/.pnpm-store && npx pnpm run build"
+	# ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF . ../components/"
+	# ignore = "git diff --quiet $COMMIT_REF $CACHED_COMMIT_REF -- components/ package.json pnpm-lock.yaml"
+	publish = "dist"
+
+# 1. A hack to skip npm install
+# 	@see https://answers.netlify.com/t/using-pnpm-and-pnpm-workspaces/2759/15
+[build.environment]
+  NODE_VERSION = "16"
+  NPM_FLAGS = "--version" # 1

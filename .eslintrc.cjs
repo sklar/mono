@@ -42,6 +42,8 @@ module.exports = {
 		sourceType: 'module', // allow ES6 imports
 	},
 
+	plugins: ['@typescript-eslint/eslint-plugin', 'prettier'],
+
 	rules: {
 		'import/prefer-default-export': 'off',
 	},
