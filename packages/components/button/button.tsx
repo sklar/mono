@@ -33,7 +33,6 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
 	disabled?: boolean
 }
 
-// let's check if the `ci` pick-up this change and kicks in 🤔
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 	(
 		{ active, busy, disabled, size = 'md', text, type = 'button', variant = 'secondary', ...props },
@@ -54,4 +53,4 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 	),
 )
 
-Button.displayName = 'Button'
+Button.displayName = 'AaaaaaaawesomeButton'
