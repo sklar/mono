@@ -9,8 +9,8 @@ A monorepo playground w/ two React apps (React) and shared components (without c
 | ✨ | 🚥 |
 | - | :-: |
 | [Components](packages/components/) | |
-| [One](packages/one/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/fd236b30-6d56-49f4-8c11-95dfe31fe62e/deploy-status)](https://app.netlify.com/sites/mono-one/deploys) |
-| [Two](packages/two/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/a6e4e8b0-ed94-4177-9ff9-5d82c58b3c3d/deploy-status)](https://app.netlify.com/sites/mono-two/deploys) |
+| [One](packages/one/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/5b756360-a618-4534-a9c9-c54a444a0722/deploy-status)](https://app.netlify.com/sites/mono-one/deploys) |
+| [Two](packages/two/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/480c9a0f-5614-492b-85cf-acd839eb7124/deploy-status)](https://app.netlify.com/sites/mono-two/deploys) |
 
 </td>
 <td>

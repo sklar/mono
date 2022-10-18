@@ -40,10 +40,10 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 	) => (
 		<button
 			ref={ref}
+			type={type}
 			data-active={active ?? null}
 			data-busy={busy ?? null}
 			data-size={size}
-			data-type={type}
 			data-variant={variant}
 			disabled={busy || disabled ? true : undefined}
 			{...props}
@@ -53,4 +53,4 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 	),
 )
 
-Button.displayName = 'AaaaaaaawesomeButton'
+Button.displayName = 'Button'
