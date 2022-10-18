@@ -1,5 +1,0 @@
-# 1. A hack to skip npm install
-# 	@see https://answers.netlify.com/t/using-pnpm-and-pnpm-workspaces/2759/15
-[build.environment]
-  NODE_VERSION = "16"
-  NPM_FLAGS = "--version" # 1

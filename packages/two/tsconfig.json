@@ -1,5 +1,5 @@
 {
   "extends": "../../tsconfig.json",
   "include": ["src"],
-  "references": [{ "path": "../components/tsconfig.json" }, { "path": "./tsconfig.vite.json" }]
+  "references": [{ "path": "./tsconfig.vite.json" }]
 }
