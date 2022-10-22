@@ -18,7 +18,7 @@ module.exports = {
 
 		// enable `eslint-plugin-prettier` and `eslint-config-prettier` to handle Prettier errors as ESLint errors;
 		// make sure this is the last item in the `extends` array.
-		'plugin:prettier/recommended',
+		// 'plugin:prettier/recommended',
 	],
 
 	env: {
