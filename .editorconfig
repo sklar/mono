@@ -12,7 +12,7 @@ indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{json, md, toml, yaml}]
+[*.{json, md, toml, yaml, yml }]
 indent_style = space
 
 [*.{md}]
