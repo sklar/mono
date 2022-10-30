@@ -40,7 +40,6 @@ jobs:
           pnpm install --lockfile-only
 
       - name: Create PR
-        # id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
