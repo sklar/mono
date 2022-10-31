@@ -1,0 +1,34 @@
+# .kodiak.toml
+
+# Kodiak's configuration file should be placed at `.kodiak.toml` (repository
+# root) or `.github/.kodiak.toml`.
+# docs: https://kodiakhq.com/docs/config-reference
+
+# version is the only required setting in a kodiak config.
+# `1` is the only valid setting for this field.
+version = 1
+
+[merge]
+# Label to enable Kodiak to merge a PR.
+
+# By default, Kodiak will only act on PRs that have this label. You can disable
+# this requirement via `merge.require_automerge_label`.
+# automerge_label = "automerge" # default: "automerge"
+
+# Choose merge method for Kodiak to use.
+#
+# Kodiak will report a configuration error if the selected merge method is
+# disabled for a repository.
+#
+# If you're using the "Require signed commits" GitHub Branch Protection setting
+# to require commit signatures, "merge" or "squash" are the only compatible options. "rebase" will cause Kodiak to raise a configuration error.
+method = "squash" # default: first valid merge method in list "merge", "squash", "rebase", options: "merge", "squash", "rebase"
+
+# Once a PR is merged, delete the branch. This option behaves like the GitHub
+# repository setting "Automatically delete head branches", which automatically
+# deletes head branches after pull requests are merged.
+# delete_branch_on_merge = false # default: false
+
+# Don't wait for in-progress status checks on a PR to finish before updating the
+# branch.
+optimistic_updates = false # default: true
