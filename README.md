@@ -33,3 +33,4 @@ graph TD
 - [Building the perfect GitHub CI workflow for your frontend team](https://blog.maximeheckel.com/posts/building-perfect-github-action-frontend-teams/)
 - [Add Commitlint, Commitizen, Standard Version, and Husky to SvelteKit Project](https://davipon.hashnode.dev/add-commitlint-commitizen-standard-version-and-husky-to-sveltekit-project)
 - [Ditching manual releases with Changesets](https://dnlytras.com/blog/using-changesets/)
+- [Goodbye Dependabot, Hello Batch Dependency Updates](https://swyxkit.netlify.app/goodbye-dependabot-hello-batch-dependency-updates)
