@@ -75,7 +75,7 @@ jobs:
 
       - name: Run formatter
         run: |
-          pnpm run lint:write
+          pnpm run format:write
 
   # ============================================================================
   # Typecheck
