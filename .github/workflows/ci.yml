@@ -17,6 +17,7 @@ jobs:
   # Install
   # ============================================================================
   install:
+    name: Install
     runs-on: ubuntu-latest
 
     strategy:
@@ -44,13 +45,13 @@ jobs:
   # Lint & Format
   # ============================================================================
   lint:
+    name: Lint
+    needs: install
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node: [16]
-
-    needs: install
 
     steps:
       - name: Checkout
@@ -67,7 +68,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pnpm install
+          pnpm install --prefer-offline
 
       - name: Run linter
         run: |
@@ -81,13 +82,13 @@ jobs:
   # Typecheck
   # ============================================================================
   typecheck:
+    name: Typecheck
+    needs: install
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node: [16]
-
-    needs: install
 
     steps:
       - name: Checkout
@@ -104,7 +105,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pnpm install
+          pnpm install --prefer-offline
 
       - name: Check types
         run: |
@@ -114,13 +115,13 @@ jobs:
   # Build
   # ============================================================================
   build:
+    name: Build
+    needs: [lint, typecheck]
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node: [16]
-
-    needs: [lint, typecheck]
 
     steps:
       - name: Checkout
@@ -137,7 +138,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pnpm install
+          pnpm install --prefer-offline
 
       - name: Run build
         run: |
