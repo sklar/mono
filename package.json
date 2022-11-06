@@ -7,6 +7,7 @@
     "build:one": "pnpm --filter one run build",
     "build:two": "pnpm --filter two run build",
     "build": "pnpm --parallel run build",
+    "changeset": "changeset",
     "dev:one": "pnpm --filter one run dev",
     "dev:two": "pnpm --filter two run dev",
     "dev": "pnpm --parallel run dev",
@@ -23,6 +24,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.7",
+    "@changesets/cli": "^2.25.2",
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "@types/eslint": "^8.4.6",
     "@types/prettier": "^2.7.1",
