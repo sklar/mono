@@ -1,6 +1,6 @@
 # Monorepo PoC [![CI](https://github.com/sklar/mono/actions/workflows/ci.yml/badge.svg)](https://github.com/sklar/mono/actions/workflows/ci.yml)
 
-A monorepo playground w/ two React apps (React) and shared components (without compilation).
+A monorepo playground w/ two React apps and shared components (without compilation and publishing).
 
 <table>
 <tr>
