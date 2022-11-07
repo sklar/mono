@@ -1,7 +1,7 @@
 {
   "name": "@mono/components",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "typecheck": "tsc --noEmit"
   }
