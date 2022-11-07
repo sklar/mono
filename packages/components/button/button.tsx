@@ -1,14 +1,10 @@
-import { HTMLAttributes, forwardRef } from 'react'
+import { ButtonHTMLAttributes, forwardRef } from 'react'
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	/**
 	 * Label
 	 */
 	text: string
-	/**
-	 * Type
-	 */
-	type?: 'button' | 'reset' | 'submit'
 
 	/**
 	 * Size
