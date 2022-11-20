@@ -2,8 +2,8 @@ name: Nightly
 
 on:
   schedule:
-    # run every Mon @ 12:00 pm
-    - cron: '0 12 * * 1'
+    # run every Mon @ 12:00 am
+    - cron: '0 0 * * 1'
   workflow_dispatch:
 
 jobs:
@@ -39,10 +39,17 @@ jobs:
         run: |
           pnpm install --lockfile-only
 
+      - name: Generate token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.SKL4R_ID }}
+          private_key: ${{ secrets.SKL4R_KEY }}
+
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ steps.generate-token.outputs.token }}
           branch: ci/lockfile
           commit-message: '[ci]: update deps'
           title: '[ci] lockfile update'
