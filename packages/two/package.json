@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "@mono/components": "*"
+  },
+  "volta": {
+    "extends": "../../package.json"
   }
 }
