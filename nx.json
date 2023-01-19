@@ -1,0 +1,21 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["typecheck", "build"],
+        "accessToken": "NWFiYjMwNWQtOWViMC00ZDZlLWJmOTItYTY2NTE4MGM5OWY2fHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDefaults": {
+    "typecheck": {
+      "dependsOn": ["^typecheck"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"]
+    }
+  },
+  "defaultBase": "main"
+}
