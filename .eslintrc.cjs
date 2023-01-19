@@ -40,6 +40,7 @@ module.exports = {
 			'./tsconfig.eslint.json', // https://stackoverflow.com/a/68686975
 		],
 		sourceType: 'module', // allow ES6 imports
+		tsconfigRootDir: __dirname, // https://github.com/typescript-eslint/typescript-eslint/issues/251#issuecomment-567365174
 	},
 
 	plugins: ['@typescript-eslint/eslint-plugin', 'prettier'],

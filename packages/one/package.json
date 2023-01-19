@@ -5,7 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "format:check": "prettier --ignore-path=../../.prettierignore --ignore-unknown --check .",
+    "format": "prettier --ignore-path=../../.prettierignore --ignore-unknown --write .",
+    "lint:check": "eslint . --ext .cjs,.js,.jsx,.mjs,.ts,.tsx",
+    "lint": "eslint . --ext .cjs,.jsx,.mjs,.ts,.tsx --fix",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
   },

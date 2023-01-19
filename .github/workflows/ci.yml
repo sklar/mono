@@ -72,11 +72,11 @@ jobs:
 
       - name: Run linter
         run: |
-          pnpm run lint:write
+          pnpm run lint
 
       - name: Run formatter
         run: |
-          pnpm run format:write
+          pnpm run format
 
   # ============================================================================
   # Typecheck

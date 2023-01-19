@@ -5,6 +5,10 @@
   "main": "./index.ts",
   "types": "./index.ts",
   "scripts": {
+    "format:check": "prettier --ignore-path=../../.prettierignore --ignore-unknown --check .",
+    "format": "prettier --ignore-path=../../.prettierignore --ignore-unknown --write .",
+    "lint:check": "eslint . --ext .cjs,.js,.jsx,.mjs,.ts,.tsx",
+    "lint:foo": "eslint . --ext .cjs,.js,.jsx,.mjs,.ts,.tsx --fix",
     "typecheck": "tsc --noEmit"
   },
   "volta": {
